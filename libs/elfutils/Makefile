@@ -45,10 +45,10 @@ ifeq ($(CONFIG_BUILD_NLS),y)
 TARGET_LDFLAGS += "-lintl"
 endif
 
-ifdef CONFIG_USE_UCLIBC
+#ifdef CONFIG_USE_UCLIBC # dirty hack: CONFIG_USE_UCLIBC is not available for realtek toolchain
 CONFIGURE_VARS += \
-	LIBS="-largp"
-endif
+	LIBS="-luargp"
+#endif
 
 CONFIGURE_ARGS += \
 	--disable-werror \
