@@ -12,7 +12,7 @@ PKG_VERSION:=3.0.12
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://fossies.org/linux/misc
+PKG_SOURCE_URL:=https://github.com/opennetworklinux/buildroot-download-cache/raw/master/dl/
 PKG_MD5SUM:=4c1f1e72b82371704f93ebdd3c7b6259
 
 include $(INCLUDE_DIR)/package.mk
